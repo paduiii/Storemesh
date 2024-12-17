@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storemesh Interface</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="scripts.js" defer></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/website_digital store mesh-08.png" alt="Storemesh Logo" width="200"></a>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="pages/Menu1.html">Menu 1</a>
+      <a href="pages/Menu2.html">Menu 2</a>
+      <a href="pages/Menu3.html">Menu 3</a>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+      <span class="material-symbols-outlined">search</span>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Filter -->
+    <aside class="filter">
+      <h2>Filter</h2>
+      <div class="filter">
+        <select id="filterSelect">
+          <option value="all">All City</option>
+          <option value="new york">New York</option>
+          <option value="los angeles">Los Angeles</option>
+          <option value="chicago">Chicago</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- Table -->
+    <section class="data-table">
+      <h2>Data</h2>
+      <div class="table-wrapper">
+        <div class="table-wrapper">
+          <table class="fl-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Occupation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- First page -->
+              <tr>
+                <td>John Doe</td>
+                <td>25</td>
+                <td>New York</td>
+                <td>Teacher</td>
+              </tr>
+              <tr>
+                <td>Jane Smith</td>
+                <td>30</td>
+                <td>Los Angeles</td>
+                <td>Teacher</td>
+              </tr>
+              <tr>
+                <td>Emily Johnson</td>
+                <td>35</td>
+                <td>Chicago</td>
+                <td>Police</td>
+              </tr>
+              <tr>
+                <td>Mike Johnson</td>
+                <td>40</td>
+                <td>Chicago</td>
+                <td>Fire Fighter</td>
+              </tr>
+              <tr>
+                <td>Alice Brown</td>
+                <td>35</td>
+                <td>Los Angeles</td>
+                <td>Secretary</td>
+              </tr>
+              <!-- Second page -->
+              <tr>
+                <td>David Wilson</td>
+                <td>28</td>
+                <td>New York</td>
+                <td>Engineer</td>
+              </tr>
+              <tr>
+                <td>Sarah Adams</td>
+                <td>32</td>
+                <td>Los Angeles</td>
+                <td>Designer</td>
+              </tr>
+              <tr>
+                <td>Michael Clark</td>
+                <td>45</td>
+                <td>Chicago</td>
+                <td>Doctor</td>
+              </tr>
+              <tr>
+                <td>Laura Scott</td>
+                <td>29</td>
+                <td>New York</td>
+                <td>Marketing</td>
+              </tr>
+              <tr>
+                <td>James Taylor</td>
+                <td>38</td>
+                <td>Los Angeles</td>
+                <td>Developer</td>
+              </tr>
+              <!-- Third Page -->
+              <tr>
+                <td>Emma Martinez</td>
+                <td>26</td>
+                <td>Chicago</td>
+                <td>Accountant</td>
+              </tr>
+              <tr>
+                <td>Chris Rodriguez</td>
+                <td>41</td>
+                <td>Chicago</td>
+                <td>Manager</td>
+              </tr>
+              <tr>
+                <td>Olivia Harris</td>
+                <td>33</td>
+                <td>New York</td>
+                <td>HR Specialist</td>
+              </tr>
+              <tr>
+                <td>Matthew Lewis</td>
+                <td>36</td>
+                <td>New York</td>
+                <td>Consultant</td>
+              </tr>
+              <tr>
+                <td>Isabella Perez</td>
+                <td>24</td>
+                <td>New York</td>
+                <td>Analyst</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Page Change -->
+        <div class="navigation">
+          <button id="prevPage" disabled>&laquo; Previous</button>
+          <span id="pageInfo">Page 1 of 1</span>
+          <button id="nextPage">Next &raquo;</button>
+        </div>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
