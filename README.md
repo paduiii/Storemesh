@@ -1,6 +1,6 @@
 # this is a test of Digital Storemesh
 
-![Design preview](./images/375px.jpeg)
+![Design preview](./images/1440px.jpeg)
 
 ### Links
 
